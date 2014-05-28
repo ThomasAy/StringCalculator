@@ -12,11 +12,21 @@ StringCalculator::StringCalculator()
 int StringCalculator::add(string s1)
 {
 	int nb = 0;
-
+	int temp = 0;
+	s1 += " ";
 	for(int i = 0; i < s1.length(); i++)
 	{
 		char c = s1[i];
-		nb += atoi(&c);
+		if(atoi(&c) != 0)
+		{
+			temp = atoi(&c) + 10 * temp;
+			cout << temp << "\n";
+		}
+		else
+		{
+			nb += temp;
+			temp = 0;
+		}
 	}
 
 	return nb;
