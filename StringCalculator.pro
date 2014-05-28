@@ -14,5 +14,11 @@ CONFIG   -= app_bundle
 
 TEMPLATE = app
 
+INCLUDEPATH = igloo/
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    StringCalculator.cpp \
+    StringCalculatorTest.cpp
+
+HEADERS += \
+    StringCalculator.h

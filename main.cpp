@@ -3,11 +3,10 @@
  * License: http://www.gnu.org/licenses/gpl.html GPL version 2 or higher
  */
 
-#include <QCoreApplication>
+#include <igloo/igloo_alt.h>
+using namespace igloo;
 
 int main(int argc, char *argv[])
 {
-	QCoreApplication a(argc, argv);
-
-	return a.exec();
+	return TestRunner::RunAllTests();
 }
