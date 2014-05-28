@@ -11,5 +11,13 @@ StringCalculator::StringCalculator()
 
 int StringCalculator::add(string s1)
 {
-	return atoi(s1.c_str());
+	int nb = 0;
+
+	for(int i = 0; i < s1.length(); i++)
+	{
+		char c = s1[i];
+		nb += atoi(&c);
+	}
+
+	return nb;
 }

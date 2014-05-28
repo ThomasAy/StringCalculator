@@ -15,6 +15,6 @@ Describe(A_Test)
 	{
 		StringCalculator str;
 		Assert::That(str.add(), Equals(0));
-		Assert::That(str.add("2"), Equals(2));
+		Assert::That(str.add("2,3"), Equals(5));
 	};
 };
